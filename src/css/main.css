@@ -1,0 +1,95 @@
+@font-face {
+    font-family: alogo;
+    src: url("../assets/arial.TTF");
+}
+@font-face {
+    font-family: gs;
+    src: url("../assets/gs.ttf");
+}
+:root{
+    --fg:white;
+    --bg:#212529;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: gs;
+}
+body{
+    color: var(--fg);
+    background-color: var(--bg);
+}
+.logo{
+    font-size: 30px;
+    font-family: alogo;
+    margin-left: 15px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    backdrop-filter: blur(8px);
+    position: fixed;
+    z-index: 1000;
+    transition: 1s;
+    top: 0px;
+    left: 0px;
+}
+nav a{
+    text-decoration: none;
+    color: var(--fg);
+    font-weight: 600;
+    margin-left: 16px;
+    transition: 0.3s;
+}
+nav a:hover{
+    opacity: 0.6;
+}
+.rnav{
+    position: absolute;
+    right: 15px;
+}
+.bodypad{
+    padding: 0px 20px;
+}
+.body{
+    margin-top: 60px;
+    padding: 3px 20px;
+}
+.search{
+    font-size: 14px;
+    border: none;
+    color: var(--fg);
+    padding: 7px;
+    border: #ffffff2f 1px solid;
+    border-radius: 100px;
+    background: #ffffff1f;
+    backdrop-filter: blur(10px);
+}
+.search:focus{
+    outline: none;
+    border: #ffffff6b 1px solid;
+}
+a{
+    color: var(--fg);
+}
+.nheader{
+    margin-top: 10px;
+}
+footer{
+    padding: 15px 20px;
+    margin-top: 30px;
+    background-color: #2d343a;
+}
+@media (max-width:500px) {
+    .search{
+        display: none;
+    }
+    nav a{
+        margin-left: 10px;
+    }
+    .logo{
+        margin-left: 5px;
+    }
+}
