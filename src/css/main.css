@@ -82,6 +82,9 @@ footer{
     margin-top: 30px;
     background-color: #2d343a;
 }
+.extend{
+    height: calc(100vh - 200px);
+}
 @media (max-width:500px) {
     .search{
         display: none;
